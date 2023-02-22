@@ -3,23 +3,43 @@ import propTypes from 'prop-types'
 const Profile = (props) => {
  console.log(props)
   return (
-    <div>
-      {props.children}
-      <span className='name' style={{marginTop:'-100px' , marginLeft:'60px'}}>
-      <h3><span><h2>name:</h2></span> {props.test.fullname}</h3>
-      <p><span><h2>bio:</h2></span>{props.test.bio}</p>
-      <p><span><h2>profession:</h2></span>{props.test.profession}</p>
-      <button style ={{backgroundColor:'blue' , color: 'white' , width: '150px', height:'40px', borderRadius:'10px'}} onClick={()=>props.handleName(props.test.fullname)} >Info</button>
-      </span>
+    <div className='profileDiv'> 
+      
+      <hr/>
+      <div >
+        {props.children}
+      </div>
+      <div >
+        
+          <h2 >name:</h2>
+          <h4 > {props.test.fullname}</h4>
+        
+        
+          <h2>bio:</h2>
+          <h4 >{props.test.bio}</h4>
+        
+       
+          <h2 >profession:</h2> 
+          <h4 >{props.test.profession}</h4>
+        
+        <button style={{width:'150px',height:'35px',border:'none',borderRadius:'5px'}} >Info</button>
+        <br></br>
+      </div>
     </div>
+  
   )
 }
 Profile.defaultProps={
-  fullname:'.....'  ,
-  bio:'............' ,
-profession:'.......'}
+  test:{
+    
+    fullname:'......',
+    bio:'........',
+    profession:'.......'
+
+  }
+ }
 Profile.propTypes={
-  fullname:propTypes.string,
+  fullname:propTypes.bool,
   bio:propTypes.string,
   profession:propTypes.string
 }

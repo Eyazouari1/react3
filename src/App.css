@@ -1,38 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@1,200&family=Raleway:wght@200&family=Roboto:wght@100&family=Work+Sans:ital,wght@1,100&display=swap');
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profileDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h4{
+  font-family: "Mynerve";
+  font-size:'25px';
+  margin-left: '10px';
+  
+  
 }
+h2{  
+ 
+  font-size: '26px';
+  text-decoration: underline;
+  color:grey;
+  text-shadow: 2px 2px black;
+}
+button{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: '5px';
+  width:'150px';
+  height:'35px';
+  border:'none';
+
+  background-color: aquamarine;
+  cursor: pointer;
+  margin-bottom:'90px' ;
+ 
 }
